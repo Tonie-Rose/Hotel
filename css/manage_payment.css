@@ -1,0 +1,307 @@
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../image/bg8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #4a4539;
+    line-height: 1.5;
+  }
+
+  header {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo h2 {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #b89452;
+    margin: 0;
+    letter-spacing: 1.2px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-weight: 600;
+    color: #7a6a44;
+    margin-left: 30px;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+  }
+
+  nav a i {
+    color: #b89452;
+    font-size: 1.2rem;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #b89452;
+  }
+
+  nav a.active::after,
+  nav a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.5px;
+    width: 100%;
+    background-color: #b89452;
+    border-radius: 2px;
+  }
+
+  .dashboard-content {
+    max-width: 1100px;
+    margin: 50px auto 90px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(180, 165, 82, 0.18);
+    user-select: none;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .dashboard-content:hover {
+    box-shadow: 0 20px 50px rgba(180, 165, 82, 0.3);
+  }
+
+  .dashboard-content h2 {
+    font-family: 'Georgia', serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: #b89452;
+    margin-bottom: 6px;
+    letter-spacing: 1.1px;
+    text-shadow: 0 1px 2px rgba(184, 148, 82, 0.6);
+  }
+
+  .dashboard-content p {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #7a6a44;
+    margin-bottom: 38px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+
+  .styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.25s ease;
+  }
+
+  .styled-table:hover {
+    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.12);
+  }
+
+  .styled-table thead th {
+    background-color: #b89452;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 18px 22px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    border-bottom: 3px solid #7a6a44;
+  }
+
+  .styled-table thead th:first-child {
+    border-top-left-radius: 16px;
+  }
+
+  .styled-table thead th:last-child {
+    border-top-right-radius: 16px;
+  }
+
+  .styled-table tbody tr {
+    background-color: #f9f7f1;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(180, 165, 82, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .styled-table tbody tr:hover {
+    background-color: #f3f1dc;
+    transform: translateY(-2px);
+    font-weight: 600;
+  }
+
+  .styled-table tbody td {
+    padding: 16px 22px;
+    text-align: center;
+    vertical-align: middle;
+    color: #4a4539;
+    border: none;
+  }
+
+  .styled-table tbody tr td[colspan] {
+    font-style: italic;
+    color: #9e8f57;
+    font-weight: 500;
+  }
+
+  .btn {
+    padding: 9px 18px;
+    margin: 0 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    min-width: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+  }
+
+  .view-btn {
+    background-color: #b89452;
+    color: white;
+  }
+
+  .view-btn:hover {
+    background-color: #a07d37;
+  }
+
+  .refund-btn {
+    background-color: #f39c12;
+    color: white;
+  }
+
+  .refund-btn:hover {
+    background-color: #d88607;
+  }
+
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+
+  .btn[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #b89452;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0.95;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    transition: opacity 0.25s ease;
+  }
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1050;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.58);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .modal.active {
+    display: flex; 
+    animation: fadeInBg 0.3s ease forwards;
+  }
+  @keyframes fadeInBg {
+    from { background: rgba(0, 0, 0, 0); }
+    to { background: rgba(0, 0, 0, 0.58); }
+  }
+  .modal-content {
+    background-color: #fff;
+    border-radius: 24px;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 50px;
+    box-shadow: 0 25px 50px rgba(180, 165, 82, 0.4);
+    position: relative;
+    animation: slideInUp 0.4s ease forwards;
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .modal-content h3 {
+    font-family: 'Georgia', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 28px;
+    color: #b89452;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #b89452;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .close-btn:hover {
+    color: #7a6a44;
+  }
+  #paymentDetails {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #564e33;
+    word-wrap: break-word;
+  }

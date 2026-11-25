@@ -1,0 +1,106 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #3f87a6, #ebf8e1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #3f87a6;
+  color: #3f87a6;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+input, select {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #3f87a6;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 0.75rem;
+  background-color: #3f87a6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #326b87;
+}
+
+/* Hidden Form */
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .tabs button {
+    font-size: 0.9rem;
+  }
+}
